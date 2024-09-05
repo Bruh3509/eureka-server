@@ -5,7 +5,7 @@ spring:
     bootstrap:
       enabled: true
   jmx:
-    port: 9001
+    enabled: false
   output:
     ansi:
       enabled: ALWAYS
@@ -13,6 +13,11 @@ spring:
 server:
   port: 8070
 
+management:
+  endpoints:
+    jmx:
+      enabled: false
+      
 eureka:
   instance:
     hostname: localhost
